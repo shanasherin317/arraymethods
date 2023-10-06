@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methods of array</title>
+</head>
+<body>
+    
+    <script>
+    const arr=["apple","grapes","orange","mango","chikku"]
+    // console.log(arr);
+    // console.log(arr[0]);
+
+    //   length :
+    console.log(arr.length);
+
+    // shift : is used to remove first element from an array
+     let languages=["eng","urdu","malylm","tamil"]
+     let x=languages.shift()
+     console.log(x);
+     console.log(languages);
+
+    //  push : The push() method adds zero or more elements to the end of the array
+  let city=["newyork","london","dubai"]
+  city.push("canada")    
+  console.log(city);
+  
+//   Unshift : is used to add elements to the beginning of an array and also returns the newlength of an array.
+
+let veg=["onion","tomato","potato","ginger"]
+veg.unshift("chilly","papaya","ladyfinger")
+console.log(veg);
+
+// pop: is used to remove the last element from an array and returns that element
+
+let name=["shimly","ansina","shana","srreju"]
+let nameremove=name.pop()
+console.log(nameremove);
+console.log(name);
+
+// slice:  returns a shallow copy of a portion of an array into a new array object.
+
+  let numbers=[1,2,3,4,5,6,7,8]
+  newarr=numbers.slice(2,6)
+  console.log(newarr);
+
+//   splice: is used to modify an array(add,remove,and replace)
+
+let primenum=[2,3,5,7,9,11]
+removednum=primenum.splice(3,2,13,17)
+console.log(removednum);
+console.log(primenum);
+
+// reverse: is used to returns the array in reverse order.
+let num=[1,2,3,4,5,6,7]
+reversenum=num.reverse()
+console.log(reversenum);
+
+// join: The join() method returns a new string by concatenating all of the elements in an array, separated by a specified separator.
+
+let message=["shimly","is","a","pottateacher"]
+joindmsg=message.join(" ")
+console.log(joindmsg);
+
+// sort: is used  to arrange items of array in a specific order
+
+let places=["malukkl","sajeri","arayur"]
+arngplc=places.sort()
+console.log(arngplc);
+
+// toString:The toString() method returns a string formed by the elements of the given array.
+let item=["java","is",1]
+itemstring=item.toString()
+console.log(itemstring);
+
+// concat:The concat() method returns a new array by merging two or more values/arrays.
+
+let primenumbr=[2,3,5,7,9]
+let evennumbr=[2,4,6,8]
+
+joinedarr=primenumbr.concat(evennumbr)
+console.log(joinedarr);
+
+// flat:The flat() method creates a new array by flattening a nested array up to the specified depth.
+
+ let numbr=[
+    1,2,
+    [
+        3,4,
+        [
+            6,7,
+        [
+            8,9,
+        ]
+    ]
+]
+]
+ let flat=numbr.flat(2)
+ console.log(flat);
+
+ 
+
+    </script>
+</body>
+</html>
